@@ -82,18 +82,18 @@ for value in dic.values():
 # print(dic)
 
 ####### SET #########
-first_set = set()
-second_set = {1,1,1,1,1,1,2,2,2,0,"Ashu","ashu","ASHU","ASHU",True,True,False,False}
-print(second_set)
+# first_set = set()
+# second_set = {1,1,1,1,1,1,2,2,2,0,"Ashu","ashu","ASHU","ASHU",True,True,False,False}
+# print(second_set)
 
 
 # add element in set
-first_set.add("Payal")
-print("first_set", first_set)
+# first_set.add("Payal")
+# print("first_set", first_set)
 
 # update element in set
-first_set.update(["Payal","verma"])
-print(first_set)
+# first_set.update(["Payal","verma"])
+# print(first_set)
 
 # remove element from set
 # first_set.discard("Ashu")
@@ -125,3 +125,79 @@ print(first_set)
 # for i in li:
 #     dic[i] = li.count(i)
 # print(dic)
+
+# ----------------------------------------------------------------------------------------------
+
+di = {"name":"payal","age":24}
+
+if "name" in di:
+    print(di["name"])
+
+# string
+# first_name = "payal"
+# second_name = "Verma"
+
+# print(first_name + second_name)
+# print("first character",first_name[0])
+# print("last_character",first_name[-1])
+
+# sub string
+# email = "ashuthakur07@gmail.com"
+# print("first_name",email[:10])
+# string = "NOONE"
+# if string == string[::-1]:
+#     print("palindrom")
+
+# string is imutable
+string = "Hello world"
+
+print('h' in string)
+print('h' not in string)
+
+string = "the price of this product is \" "
+print(string)
+
+# string methods
+
+string = "HeLLo World"
+print(string.swapcase())
+
+# trim whitespace the string 
+string = " Hello World "
+print(f"start and end :{string.strip()}")
+print(f"start :{string.lstrip()}")
+print(f"end :{string.rstrip()}")
+
+# split the string 
+string = "H_ello_worl-d"
+print(string.split(" "))
+print(string.split("_"))
+print(string.split("H"))
+
+# reverse the string
+# string = "The Quick brown fox jumps over the lazy dog"
+# list_of_string = string.split(" ")
+# print(list_of_string)
+# list_of_string.reverse()
+# print(list_of_string)
+# reverse_list = "-".join(list_of_string)
+# print(reverse_list)
+# print("----------------------------")
+# reverse_string = "-".join((string.split(" ")))
+# print(reverse_string)
+
+# print(string.find("brown",17)) # if the substring doesn't exist in the main string it returns -1
+
+# new_string = "Hello_World"
+# print(new_string.replace("ll","yy"))
+# print(new_string.replace("l","yy",2))
+
+# character to ascii
+print("----------------------------")
+char = 'A'
+print("ascci value of any character :",ord(char))
+
+# ascii to character
+number = 75
+print("ascii into character :",chr(number))
+
